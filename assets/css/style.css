@@ -247,7 +247,7 @@ footer a {
   header {
     text-align: left;
   }
-
+ 
   header div p {
     text-align: center;
   }
@@ -265,6 +265,7 @@ footer a {
   header div img {
     margin-top: 15px;
     margin-right: 10px;
+    
   }
   nav ul li {
     margin-right: 20px;
@@ -335,10 +336,12 @@ footer a {
     }
     .logoHTML5 {
       display: flex;
-      align-items: center;
-      margin-right: 5px;
       border: 0;
       float: left;
+    }
+
+    table {
+        margin-top: 20%;
     }
     
   }
