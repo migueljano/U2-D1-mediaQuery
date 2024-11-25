@@ -335,7 +335,7 @@ footer a {
       box-shadow: none;
     }
     .logoHTML5 {
-      display: flex;
+      display: block;
       border: 0;
       float: left;
     }
