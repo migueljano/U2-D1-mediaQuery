@@ -244,31 +244,26 @@ footer a {
 /* DESKTOP */
 
 @media screen and (min-width: 1200px) {
-  header {
+   header {
     text-align: left;
-  }
- 
-  header div p {
-    text-align: center;
-  }
-
-  nav {
-    text-align: end;
-  }
-  header div p {
-    margin: auto;
-  }
-  header a {
-    margin-right: 10px;
+    padding-top: 30px;
+    position: relative;
+    font-size: 0.9em;
   }
 
+  header div,
+  header p,
   header div img {
-    margin-top: 15px;
-    margin-right: 10px;
-    
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
   }
-  nav ul li {
-    margin-right: 20px;
+
+  #navDiv {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
   }
   table {
     width: 60%;
@@ -321,27 +316,26 @@ footer a {
 
 /*STAMPA*/
 @media print {
-    header,
-    iframe,
-    section,
-    aside,
-    footer {
-      display: none;
-    }
-    body {
-      font-size: 2.1rem;
-    }
-    main {
-      box-shadow: none;
-    }
-    .logoHTML5 {
-      display: block;
-      border: 0;
-      float: left;
-    }
-
-    table {
-        margin-top: 20%;
-    }
-    
+  header,
+  iframe,
+  section,
+  aside,
+  footer {
+    display: none;
   }
+  body {
+    font-size: 2.1rem;
+  }
+  main {
+    box-shadow: none;
+  }
+  .logoHTML5 {
+    display: block;
+    border: 0;
+    float: left;
+  }
+
+  table {
+    margin-top: 20%;
+  }
+}
