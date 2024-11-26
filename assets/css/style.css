@@ -60,6 +60,9 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+.cotainerTesto {
+  background-color: white;
+}
 section {
   background-color: #e3e3e3;
   padding: 1em;
@@ -252,11 +255,10 @@ footer a {
   }
 
   header div,
-  header p,
+  header p, 
   header div img {
     display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 0;
+
   }
 
   #navDiv {
@@ -286,7 +288,7 @@ footer a {
     width: 48%;
     height: 28rem;
     box-sizing: border-box;
-    vertical-align: top;
+    vertical-align: top;  
     margin-left: 25px;
   }
   section form fieldset input {
@@ -338,4 +340,93 @@ footer a {
   table {
     margin-top: 20%;
   }
+}
+
+
+/* U2-D2-PositionCss */
+/* mobile */
+
+@media screen and (min-width: 576px) {
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 999; /*Non so com'è mi è uscito*/
+      }  
+      header p ,nav {
+        font-size: large;
+      }
+       #navDiv ul li  {
+        display: contents;
+       }
+
+       #navDiv ul li a {
+        padding-right: 15px;
+       }
+
+       main h1 {  
+        font-size: 3.5em;
+       }
+       
+       .titleContainer {
+        position: relative;
+        
+       }
+       .underlineTile {
+        position: absolute;
+        top: 63%;
+        opacity: 0.6;
+       }
+      
+       .logoHTML5 {
+        float: left;
+        margin-right: 10px;
+        
+       }
+       .cotainerTesto {
+        font-size:
+         17px;
+       }
+       table {
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+      .sectionNovità {
+        padding-right: 10px;
+        position: relative;
+      }
+      .sectionNovità h2 {
+        text-align: left;
+      }
+      .sectionNovità div h2 {
+        width: fit-content;
+        position: absolute;
+        left: 8%;
+        bottom: 67%;
+        padding: 1px 15px 1px 15px;
+        background-color: gray;
+      }
+      aside {
+        top: '';
+        /* position: relative; */
+      }
+      aside .fa-tag {
+        position: absolute;
+        right: 10%;
+        font-size: 4rem;
+        opacity: 0.1;
+      }
+
+      footer .icone {
+        position: relative;
+      }
+
+      .icone .containerIcon {
+        width: 40px;
+        height: 40px;
+        position: sticky;
+        /* bottom: 100px; */
+      }
+      
+
 }
